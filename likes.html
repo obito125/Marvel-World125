@@ -93,7 +93,7 @@
 
             // If the user has liked, disable the button
             if (liked) {
-                likeButton.disabled = true;
+                likeButton.disabled = false;
                 likeButton.textContent = "❤️ Liked";
             }
 
@@ -108,7 +108,7 @@
                     likeCountDisplay.textContent = `Likes: ${likeCount}`;
                     localStorage.setItem('likeCount', likeCount);
                     localStorage.setItem('userLiked', true);
-                    likeButton.disabled = true;
+                    likeButton.disabled = false;
                     likeButton.textContent = "❤️ Liked";
                 }
             });
