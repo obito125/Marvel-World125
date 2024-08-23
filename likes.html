@@ -107,7 +107,7 @@
                     likeCount++;
                     likeCountDisplay.textContent = `Likes: ${likeCount}`;
                     localStorage.setItem('likeCount', likeCount);
-                    localStorage.setItem('userLiked', true);
+                    localStorage.setItem('userLiked', false);
                     likeButton.disabled = false;
                     likeButton.textContent = "❤️ Liked";
                 }
