@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel World</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .spinner {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin-bottom: 20px; /* Space between spinner and message */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#main-content {
+    display: none; /* Hidden initially */
+}
+.Advice {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #000000;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+      <!-- Loading Screen -->
+      <div id="loading-screen">
+        <div class="spinner"></div>
+        <p>X-MEN MOVIES DUBBED IN *HINDI* AND *ENGLISH* SO,THE TELUGU AUDIO CONTAIN ONLY FEW MOVIES SO PLEASE DON'T BLAME ME .</p>
+    </div>
+    <header>
+        <h1>Welcome to X-Men World</h1>
+        <nav>
+            <ul>
+                <li><a href="#back" id="back-button" class="back-button">Back</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="likes.html">Rate Our Service</a></li>
+                <li>
+                    <div class="popcorn-container">
+                        <img src="https://i.pinimg.com/564x/93/ae/4a/93ae4ab13f9a7a01e5b73eba15f70eb9.jpg" alt="Popcorn" class="popcorn-logo">
+                        <div class="button">
+                            <a href="https://blinkit.com/cn/popcorn/cid/1237/156">
+                                <button class="popcorn-button">Enjoy with Popcorn!</button>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="order-to-watch-container">
+                <button id="order-to-watch-button" class="order-to-watch-button">ORDER TO WATCH</button>
+            </div>
+            <div id="order-image-modal" class="order-image-modal">
+                <span id="close-modal" class="close-modal">&times;</span>
+                <img src="X-Men.png" class="order-image" alt="Marvel Movie Order">
+            </div>
+            <a id="back-button" href="loadmore.html">Back</a>
+        </nav>
+    </header>
+    <section id="movies">
+        <h2>X-Men Movies</h2>
+        <div class="movie-list">
+            <div class="movie" onclick="playMovie(this, 'movie1.mp4')">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTg5OTMxNzk4Nl5BMl5BanBnXkFtZTcwOTk1MjAwNQ@@._V1_FMjpg_UX1000_.jpg" alt="X-Men: First Class (1962)">
+                <h3>X-Men: First Class (1962)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1GSjTy4omlf63C6DyVgyaukGmRmHjXh_e/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    <a href="https://drive.google.com/file/d/1GSjTy4omlf63C6DyVgyaukGmRmHjXh_e/view?usp=sharing" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BZGIzNWYzN2YtMjcwYS00YjQ3LWI2NjMtOTNiYTUyYjE2MGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" alt="X-Men: Days of Future Past">
+                <h3>X-Men: Days of Future Past</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1CBCHllbbdm5nzOrTZkwXVCKdvqYhJTnx/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1CBCHllbbdm5nzOrTZkwXVCKdvqYhJTnx/view?usp=sharing" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/xmenow_584x800_db9a721b.jpeg?region=0%2C0%2C584%2C800" alt="X-Men Origins: Wolverine (1979)">
+                <h3>X-Men Origins: Wolverine (1979)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1_TEk9MeAmgUpfKptyusDa0xnIEGslirL/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1_TEk9MeAmgUpfKptyusDa0xnIEGslirL/view?usp=sharing" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/I/818HhoLfyhL._AC_UF1000,1000_QL80_.jpg" alt="X-Men: Apocalypse">
+                <h3>X-Men: Apocalypse</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1VZ_-9SFuG3S6l5hO-Tljb1NBRpL8NSlp/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1VZ_-9SFuG3S6l5hO-Tljb1NBRpL8NSlp/view?usp=sharing" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/20cs_xmen_dark_phoenix_poster-keyart_2de4ace2.jpeg" alt="X-Men: Dark Phoenix">
+                <h3>X-Men: Dark Phoenix</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1gYMbqp8BrURxT96ygNinuhjVFOpmKWfp/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1gYMbqp8BrURxT96ygNinuhjVFOpmKWfp/view?usp=sharing" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BZmIyMDk5NGYtYjQ5NS00ZWQxLTg2YzQtZDk1ZmM4ZDBlN2E3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg" alt="X-Men (2004)">
+                <h3>X-Men (2004)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/14mjdAjiuHzUY6KitMDeIO2ZFv47oCFE5/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/14mjdAjiuHzUY6KitMDeIO2ZFv47oCFE5/view?usp=sharing&t=5" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://static.wikia.nocookie.net/xmenmovies/images/8/8a/20120705-104036.jpg/revision/latest?cb=20130724072229" alt="X2: X-Men United (2004)">
+                <h3>X2: X-Men United (2004)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1t9MRmP7wQn0KAxlkBy1bVe5bdyZx-KrX/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1t9MRmP7wQn0KAxlkBy1bVe5bdyZx-KrX/view?usp=sharing" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDBhNDJiMWEtOTg4Yi00NTYzLWEzOGMtMjNmNjAxNTBlMzY3XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg" alt="X-Men: The Last Stand">
+                <h3>X-Men: The Last Stand</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1yXgEqThGOmSWOP-dzaUB-jhS-AbF5ie3/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1yXgEqThGOmSWOP-dzaUB-jhS-AbF5ie3/view?usp=sharing" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzg1MDQxMTQ2OF5BMl5BanBnXkFtZTcwMTk3MjAzOQ@@._V1_.jpg" alt="the wolverine (2013)">
+                <h3>the wolverine (2013)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1XhpW33OR9hfNNrjo7ARErbnwKcN-9aTc/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1XhpW33OR9hfNNrjo7ARErbnwKcN-9aTc/view?usp=sharing" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://cdn.marvel.com/content/1x/deadpool_lob_crd_02.jpg" alt="Deadpool(2016)">
+                <h3>Deadpool(2016)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1XFYQE5y7Gbpl-WEt_8QpVZ4zCXMSjPI3/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BYzc5MTU4N2EtYTkyMi00NjdhLTg3NWEtMTY4OTEyMzJhZTAzXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_.jpg" alt="Logan (2017)">
+                <h3>Logan (2017)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/11dX8hMMzD0xJdRmiD1Wzx4F7zbjaZ4f1/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/11dX8hMMzD0xJdRmiD1Wzx4F7zbjaZ4f1/view?usp=sharing" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/I/91D8Ccrh1RL._AC_UF1000,1000_QL80_.jpg" alt="Deadpool(2018)">
+                <h3>Deadpool(2018)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1OFjvnVcNH8lgYgImTnKMbujr9B01DmsC/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzRiMjg0MzUtNTQ1Mi00Y2Q5LWEwM2MtMzUwZDU5NmVjN2NkXkEyXkFqcGc@._V1_.jpg" alt="Deadpool & Wolverine (2024)">
+                <h3>Deadpool & Wolverine (2024)</h3>
+                <div class="buttons">
+                    <a href="#" class="watch-now-button">
+                        <button class="watch-now">NOT AVAILABLE</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">NOT AVAILABLE</button>
+                    </a>
+                </div>
+            </div>
+            <script>
+                document.getElementById("order-to-watch-button").onclick = function() {
+                    document.getElementById("order-image-modal").style.display = "block";
+                }
+                
+                document.getElementById("close-modal").onclick = function() {
+                    document.getElementById("order-image-modal").style.display = "none";
+                }
+                
+                window.onclick = function(event) {
+                    if (event.target == document.getElementById("order-image-modal")) {
+                        document.getElementById("order-image-modal").style.display = "none";
+                    }
+                }
+                </script>
+            <script>
+                window.addEventListener('load', function() {
+                    setTimeout(function() {
+                        document.getElementById('loading-screen').style.opacity = '0';
+                        setTimeout(function() {
+                            document.getElementById('loading-screen').style.display = 'none';
+                            document.getElementById('main-content').style.display = 'block';
+                        }, 500); // Match the CSS transition duration
+                    }, 4000); // 4 seconds delay
+                });
+                </script>
+                <footer>
+                    <p>&copy; 2024 Marvel World. All rights reserved.<br>
+                        * You're at the bottom. No post-credit scenes here, but nice try.<br>
+                        * Thanks for scrolling down... We hope it was worth the exercise for your thumb...
+            
+                    </p>
+                </footer>
+                <p class="Advice"> * FREE ADVICE.<br>
+                    * IF YOU ONLY WATCH IN TELUGU LANGUAGE<br>
+                    THEN DOWNLOAD THAT VIDEO BY CLICKING DOWNLOAD BUTTON THEN STREAM THAT MOVIE ON YOUR VIDEO PLAYER<br>
+                    I PROVIDE MULTI LANGUAGE MOVIES SO IT WILL HELP YOU TO WATCH IN TELUGU 
+                    </p>
+            </body>
+            </html>

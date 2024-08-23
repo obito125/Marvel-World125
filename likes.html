@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel World</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS */
+        .like-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .like-button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .like-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
+
+        #likeCount {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 20px;
+            color: #0385ff;
+        }
+
+        .sarcastic-quote {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #00eeff;
+            font-style: italic;
+        }
+        .Note {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #ffcb21;
+            font-style: italic;
+        }
+        .note {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #33ff00;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Marvel World</h1>
+        <nav>
+            <ul>
+                <li><a href="loadmore.html" id="back-button" class="back-button">Back</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="like-button-container">
+        <button class="like-button" id="likeBtn">❤️ Like</button>
+    </div>
+    <div id="likeCount">Likes: 0</div>
+    <p class="sarcastic-quote">Like it, or we'll ask Thanos to snap the dislike button away. 🦾<br>
+        </p>
+        <p class="Note">* IF MOVIES ARE NOT PLAYING IN TELUGU WHILE YOU STREAMING ON THIS SITE, <br>
+            THEN TRY WITH DOWNLOAD AND CHANGE THE AUDIO IN ANOTHER STREAMING PLATFORM<br>
+    </p>
+    <p class="note"> * IF SOMETING ISN'T WORKING, JUST BLAME LOKI. HE’S USUALLY UP TO SOMETHING MISCHIEVOUS.<br></p>
+    <script>
+        // JavaScript
+        document.addEventListener("DOMContentLoaded", function() {
+            const likeButton = document.getElementById('likeBtn');
+            const likeCountDisplay = document.getElementById('likeCount');
+
+            // Check if the user has already liked the page
+            const liked = localStorage.getItem('userLiked');
+
+            // If the user has liked, disable the button
+            if (liked) {
+                likeButton.disabled = true;
+                likeButton.textContent = "❤️ Liked";
+            }
+
+            // Fetch the like count from local storage
+            let likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
+            likeCountDisplay.textContent = `Likes: ${likeCount}`;
+
+            // Handle button click
+            likeButton.addEventListener('click', function() {
+                if (!liked) {
+                    likeCount++;
+                    likeCountDisplay.textContent = `Likes: ${likeCount}`;
+                    localStorage.setItem('likeCount', likeCount);
+                    localStorage.setItem('userLiked', true);
+                    likeButton.disabled = true;
+                    likeButton.textContent = "❤️ Liked";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

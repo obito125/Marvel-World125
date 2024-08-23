@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel World</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .spinner {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin-bottom: 20px; /* Space between spinner and message */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#main-content {
+    display: none; /* Hidden initially */
+}
+
+    </style>
+</head>
+<body>
+     <!-- Loading Screen -->
+     <div id="loading-screen">
+        <div class="spinner"></div>
+        <p>HERE I PROVIDE ONLY *TELUGU* and *TAMIL* CONTENT ONLY BE AWARE IT.</p>
+    </div>
+    <header>
+        <h1>Welcome to Spidey World</h1>
+        <nav>
+            <ul>
+                <li><a href="#back" id="back-button" class="back-button">Back</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <div class="popcorn-container">
+                        <img src="https://i.pinimg.com/564x/93/ae/4a/93ae4ab13f9a7a01e5b73eba15f70eb9.jpg" alt="Popcorn" class="popcorn-logo">
+                        <div class="button">
+                            <a href="https://blinkit.com/cn/popcorn/cid/1237/156">
+                                <button class="popcorn-button">Enjoy with Popcorn!</button>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a id="back-button" href="loadmore.html">Back</a>
+        </nav>
+    </header>
+    <section id="movies">
+        <h2>Spidey Movies</h2>
+        <div class="movie-list">
+            <div class="movie" onclick="playMovie(this, 'movie1.mp4')">
+                <img src="https://i.etsystatic.com/23402008/r/il/42875c/4320812227/il_570xN.4320812227_knac.jpg" alt="spiderMan(2002)">
+                <h3>SpiderMan(2002)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1bwanPu2cTl1Jyrgc3G3q6ZvNd1lktNOW/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    <a href="#" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BZjI1MWYyNTYtMWYxNy00MGNlLWI1NzAtZGQ3OWMzMzg0ZDhhXkEyXkFqcGdeQXVyNDUzNzIxMzk@._V1_.jpg" alt="SpiderMan 2 (2004)">
+                <h3>SpiderMan 2 (2004)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1M_CKXYihBGdzHcFcznHtX1Mbgr72Qgf9/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/chameleon/title-movie/230057_Spider-Man3_2007_1400x2100_US_1.jpg?itok=axS0bxW1" alt="SpiderMan 3 (2007)">
+                <h3>SpiderMan 3 (2007)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1lWEimj1T_-8uIcyLJIludfojOXJRmQD5/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/30/56dddc31086cc/clean.jpg" alt="The Amazing Spider-man 1 (2012)">
+                <h3>The Amazing Spider-man 1 (2012)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1Ulyk3-7NTWa8YL3ktyKTu35CKI3PYgsB/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/chameleon/title-movie/456177_ASM2HE_1400x2100_Eng%20%28US%29_1.jpg?itok=ZuZ1Pfyl" alt="The Amazing Spider-man 2 (2014)">
+                <h3>The Amazing Spider-man 2 (2014)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1m-W6rhODpHo57RB-vQKKEM4puBpwYP60/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_.jpg" alt="Spider-Man: Into the Spider-Verse">
+                <h3>Spider-Man: Into the Spider-Verse (2018)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1fj32v38D9VLZN1m1AD5ZPhuESyN5ngkD/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/FncyCBKa#w3boKP2BlthZ2O-xWRXQBD-AoVMR6Un65zj9zqHEHbs" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BYWJlYjY1MmUtMWM4Yy00M2RiLWI4OTMtMDc1ZjAyNDZmZjY2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="Spider-Man: Across the Spider-Verse">
+                <h3>Spider-Man: Across the Spider-Verse (2023)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1udzHCnpILQYP7GgUsxzWBYb8Bv4mXgAW/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/xyt2gKIQ#k7NuzxdCQmQ2TEMdDFnjqg_jLCmYfq8VQkDP90iwYIg" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12798844_p_v8_ao.jpg" alt="Spiderman Homecoming">
+                <h3>Spiderman Homecoming (2017)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1OH0fdp7fHa-SAX4waPCt6a-h8rAja_L8/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/3ZUTTShB#VVRz2LkA5209wM88avUu1d3s8260fa0ECfFQdRj1lnM" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BODA5MTY0OWUtNjdlOC00NDI5LWE3NjYtNDM4MDI2MzE4OWUxXkEyXkFqcGdeQXVyOTAzODkzMjI@._V1_FMjpg_UX1000_.jpg" alt="Spider-Man: Far From Home">
+                <h3>Spider-Man: Far From Home (2019)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1MxYEkVMWv2zPUvOWtuBk96XhOuS-gywX/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/3AMjCbIT#Jp3iwyhtE8aQH69cTrxUY5qbD8K2smzabH5p6jjlYa0" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BZjI5NmFmOWUtZWY0ZS00NTc5LWE0YjgtMjk3YmNiM2EwM2U4XkEyXkFqcGdeQXVyMTA1NjE5MTAz._V1_.jpg" alt="Spider-Man: No Way Home">
+                <h3>Spider-Man: No Way Home (2021)</h3>
+                <div class="buttons">
+                    <a href="watch-now.html" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/jcUXFLBL#pSGQ3lg1WowHlEQV-3dt1aRXkhAJyN63SGq2Obh-NdM" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <script>
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    document.getElementById('loading-screen').style.opacity = '0';
+                    setTimeout(function() {
+                        document.getElementById('loading-screen').style.display = 'none';
+                        document.getElementById('main-content').style.display = 'block';
+                    }, 500); // Match the CSS transition duration
+                }, 3000); // 4 seconds delay
+            });
+            </script>
+            <footer>
+                <p>&copy; 2024 Marvel World. All rights reserved.<br>
+                    * You're at the bottom. No post-credit scenes here, but nice try.<br>
+                    * Thanks for scrolling down... We hope it was worth the exercise for your thumb...
+        
+                </p>
+            </footer>
+        </body>
+        </html>

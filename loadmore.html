@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel World</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+       <!-- Disclaimer Popup -->
+<div id="disclaimer">
+    <div class="content">
+        <h2>Disclaimer</h2>
+        <p>
+            * Data may vanish quicker than Spider-Man’s secret identity.<br>
+            * Make sure your device is fully charged. This content is more electrifying than Thor’s hammer.<br>
+            * Earphones recommended. Unless you want your neighbors to question your life choices.<br>
+            * If something isn't working, just blame Loki. He’s usually up to something mischievous.<br>
+            * For snack emergencies, click the popcorn button.
+        </p>
+        <button id="disclaimer-ok">OK</button>
+    </div>
+    </div>
+   
+    <header>
+        <h1>Welcome to Marvel World</h1>
+        <nav>
+            <ul>
+                <li><a href="#back" id="back-button" class="back-button">Back</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="404.html">About</a></li>
+                <li><a href="likes.html">Rate Our Service</a></li>
+                <li>
+                    <div class="popcorn-container">
+                        <img src="https://i.pinimg.com/564x/93/ae/4a/93ae4ab13f9a7a01e5b73eba15f70eb9.jpg" alt="Popcorn" class="popcorn-logo">
+                        <div class="button">
+                            <a href="https://blinkit.com/cn/popcorn/cid/1237/156">
+                                <button class="popcorn-button">Enjoy with Popcorn!</button>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a id="back-button" href="index.html">Back</a>
+            <div class="Avengers">
+                <a href="avengers.html" class="Avengers-button">Avengers-Stuff</a>
+            </div>
+            <div class="Spiderman-Stuff">
+                <a href="spiderman.html" class="Spiderman-Stuff-button">Spiderman-Stuff</a>
+            </div>
+            <div class="X-Men-Movies">
+                <a href="X-Men.html" class="X-Men-Movies-button">X-Men-Movies</a>
+            </div>
+        </nav>
+    </header>
+    <section id="movies">
+        <h2>Marvel Movies</h2>
+        <div class="movie-list">
+            <div class="movie" onclick="playMovie(this, 'movie1.mp4')">
+                <img src="https://m.media-amazon.com/images/M/MV5BYmMxZWRiMTgtZjM0Ny00NDQxLWIxYWQtZDdlNDNkOTEzYTdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Thor: Love and Thunder">
+                <h3>Thor: Love and Thunder (2022)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1ArdCeBl4VhnIEAQm4zmNvzXvSz5OZn8G/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    <a href="https://mega.nz/file/uZ9ikLQY#22hxtAgt42P-Xkl1-6nerYC8EMe_WTw0dBBb_85gL8Y" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTFkZjdjN2QtOGE5MS00ZTgzLTgxZjAtYzkyZWQ5MjEzYmZjXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_FMjpg_UX1000_.jpg" alt="Venom">
+                <h3>Venom (2018)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1kGGC3_gTS7URSFJY-DYv5OCp15LSb1Gy/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/8z9CyJyI#ju8gVudoTCcsu7pSp5HGD0nMi6q6uHpPuihBVtkUqos" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://cdn.marvel.com/content/1x/eternals_lob_crd_06.jpg" alt="Eternals">
+                <h3>Eternals (2021)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1k1qSoNCiIoqGtfX6in5jfQpvVD9uL3tm/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/RmEzTISI#XpbCAaQtodEBN6klZ4FmPqGBctxLJJS1iC20Fnh2wtM" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://images-cdn.ubuy.co.in/635401d3e246c026804225de-venom-let-there-be-carnage-dvd.jpg" alt="Venom Let There Be Carnage 2021">
+                <h3>Venom Let There Be Carnage 2021</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/16WSSLMdnmK6xjVtJHIh8MKumpS1dPccz/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/t6VUxKCS#2w6b9rC2bsYjH12g4snt817a7k-Eu4wfrQYq4AOz6OY" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/I/71f9pw4KlTL._AC_UF1000,1000_QL80_.jpg" alt="Guardians of the Galaxy Vol. 2">
+                <h3>Guardians of the Galaxy Vol. 2 (2017)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1aymp_HZ9sSMJdEZ68kJoi4UYWw-qL67e/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/3N9WURzR#-2S5Ez5X3BPRDvdh9nExtsaNLYRthD9673qzoLH9zuE" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDgxOTdjMzYtZGQxMS00ZTAzLWI4Y2UtMTQzN2VlYjYyZWRiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Guardians of the Galaxy Vol. 3">
+                <h3>Guardians of the Galaxy Vol. 3 (2023)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1cNYJR6fTyk87HLf4H9hHLkmOyZ4zx-B6/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/3FUFAJwK#QDXR-3akwaBFB4_GVyg3X5Sj4UEAlMoPm6QTWx5Lqe8" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTliYjlkNDQtMjFlNS00NjgzLWFmMWEtYmM2Mzc2Zjg3ZjEyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Shang-Chi and the Legend of the Ten Rings">
+                <h3>Shang-Chi and the Legend of the Ten Rings (2021)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1BBKNrMrBFpi_wnFDOlUkxu0nq7ypwoFh/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/fAMmTaaJ#dA5WC8PwhT9g367ko6z90oW3E2okE5eUXLOGf9eqZlU" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BZGEwYmMwZmMtMTQ3MS00YWNhLWEwMmQtZTU5YTIwZmJjZGQ0XkEyXkFqcGdeQXVyMTI5MzA5MjA1._V1_.jpg" alt="WandaVision">
+                <h3>WandaVision (2021)</h3>
+                <div class="buttons">
+                    <a href="watch-now.html" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="download.html" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Black_Panther_Wakanda_Forever_poster.jpg/220px-Black_Panther_Wakanda_Forever_poster.jpg" alt="Black Panther: Wakanda Forever">
+                <h3>Black Panther: Wakanda Forever (2022)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1m_zaUU5CliTMbanMYQdlCrbtAEA97cro/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/BiMmXATC#LVJ2v5ec0MT0LhUwYIWttmGJHDoWrY12EQHN4zxuweg" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjU4MTkxNzktNzUyYy00NDM2LWE5NGQtNjJlN2Q0N2MxZDAxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="She-Hulk: Attorney at Law">
+                <h3>She-Hulk: Attorney at Law (2022)</h3>
+                <div class="buttons">
+                    <a href="watch-now.html" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="download.html" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BODZhNzlmOGItMWUyYS00Y2Q5LWFlNzMtM2I2NDFkM2ZkYmE1XkEyXkFqcGdeQXVyMTU5OTA4NTIz._V1_.jpg" alt="Ant-Man and the Wasp: Quantumania">
+                <h3>Ant-Man and the Wasp: Quantumania (2023)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1yCv8_6zmUc1GLSaYKUcyjMO6R3NdbVyv/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/RnUlBTyK#pyGZ0KtnuTZao9vzP9xNHSihJ8uZNyR9e3DQHGAC50s" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BYTc5OWNhYjktMThlOS00ODUxLTgwNDQtZjdjYjkyM2IwZTZlXkEyXkFqcGdeQXVyNTA3MTU2MjE@._V1_.jpg" alt="Moon Knight">
+                <h3>Moon Knight (2022)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/15kJjzw40vi_AQ4pkyt-3O6womWgwqoNS/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/8zVXlLRJ#yE9NiISUk5vQOsbUvs3Bgd1QKSoh5EEPy8Rtc_LwgkY" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_.jpg" alt="Spider-Man: Into the Spider-Verse">
+                <h3>Spider-Man: Into the Spider-Verse (2018)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1fj32v38D9VLZN1m1AD5ZPhuESyN5ngkD/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/FncyCBKa#w3boKP2BlthZ2O-xWRXQBD-AoVMR6Un65zj9zqHEHbs" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BYWJlYjY1MmUtMWM4Yy00M2RiLWI4OTMtMDc1ZjAyNDZmZjY2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="Spider-Man: Across the Spider-Verse">
+                <h3>Spider-Man: Across the Spider-Verse (2023)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1udzHCnpILQYP7GgUsxzWBYb8Bv4mXgAW/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/xyt2gKIQ#k7NuzxdCQmQ2TEMdDFnjqg_jLCmYfq8VQkDP90iwYIg" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_.jpg" alt="The Incredible Hulk">
+                <h3>The Incredible Hulk (2008)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/13Cu_Q95bFB3J3euoBilXN4L75GBmeRrk/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/GQ8XWI7A#Ebedw92p6JsoRel_Qg655dMWaKE2sDKmVJM9KeGqzqo" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://th.bing.com/th/id/OIP.yTCsZTdZaoTxkcUugUsx_gAAAA?rs=1&pid=ImgDetMain" alt="Iron Man 2">
+                <h3>Iron Man 2 (2010)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1ZGtP9V6Vs-PlzAWa53EQeGN0saREBSqR/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/6Vk2CQ6S#UMG5sMQGysuCY0H1RLJJbKD9JYozh7kpR_g6xWNK3Xo" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://th.bing.com/th/id/OIP.4fn7xHDiZhwnxn-V1RpgUAHaLH?rs=1&pid=ImgDetMain" alt="Captain America: The Winter Soldier">
+                <h3>Captain America: The Winter Soldier (2014)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1LGCsNeSDOcOHGeeRG_YPVGEHuC6pYz-s/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/p3NGzKyJ#ZCJ7qRW5pREwmdUTYSls70a9COIwnE9rgyaZPIBllmQ" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_.jpg" alt="Captain America: Civil War">
+                <h3>Captain America: Civil War (2016)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1UID7P3O-0DDLp_R0QNNHMQksyxqdjSaB/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/luFlQbjT#m-YXGdJY931veu-Oy4wfvditiLSvQR9TuUR65OjnajQ" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://cdn.marvel.com/content/1x/deadpool_lob_crd_02.jpg" alt="Deadpool(2016)">
+                <h3>Deadpool(2016)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1XFYQE5y7Gbpl-WEt_8QpVZ4zCXMSjPI3/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/I/91D8Ccrh1RL._AC_UF1000,1000_QL80_.jpg" alt="Deadpool(2018)">
+                <h3>Deadpool(2018)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1OFjvnVcNH8lgYgImTnKMbujr9B01DmsC/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Disclaimer Popup
+ document.getElementById('disclaimer-ok').addEventListener('click', function() {
+     document.getElementById('disclaimer').style.display = 'none';
+ });
+ 
+     </script>
+    <footer>
+        <p>&copy; 2024 Marvel World. All rights reserved.<br>
+            * You're at the bottom. No post-credit scenes here, but nice try.<br>
+            * Thanks for scrolling down... We hope it was worth the exercise for your thumb...
+</p>
+    </footer>
+</body>
+</html>
+
