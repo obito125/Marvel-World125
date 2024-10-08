@@ -34,7 +34,7 @@ body {
             overflow: hidden;
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
-    color: #fff;
+    color: #FF0000;
     overflow: auto; /* Allow scrolling */
 }
 
@@ -69,7 +69,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FF0000;
+    color: #fff;
     text-decoration: none;
 }
 
