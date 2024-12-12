@@ -4,6 +4,25 @@
     0% { opacity: 0; transform: translateY(-20px); }
     100% { opacity: 1; transform: translateY(0); }
 }
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-bar:focus {
+    outline: none;
+    border-color: #f00; /* Highlight color */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
 
 main::after {
     content: '';
