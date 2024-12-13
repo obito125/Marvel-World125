@@ -27,6 +27,15 @@
         <h1>Welcome to Marvel World</h1>
         <nav>
             <ul>
+                <section id="movies">
+                    <h2>Marvel Movies</h2>
+                    <div class="search-container">
+                        <input type="text" id="search-bar" placeholder="Search for a movie..." onkeyup="filterMovies()">
+                    </div>
+                    <div class="movie-list">
+                        <!-- Existing movie cards -->
+                    </div>
+                </section>
                 <li><a href="#back" id="back-button" class="back-button">Back</a></li>
                 <li><a href="#movies">Movies</a></li>
                 <li><a href="#characters">Characters</a></li>
@@ -71,13 +80,13 @@
                 </div>
             </div>
             <div class="movie">
-                <img src="https://m.media-amazon.com/images/M/MV5BNTFkZjdjN2QtOGE5MS00ZTgzLTgxZjAtYzkyZWQ5MjEzYmZjXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_FMjpg_UX1000_.jpg" alt="Venom">
-                <h3>Venom (2018)</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYWJkY2Q4NmYtOGRlMi00YTg5LWE2ZmQtY2NkYzk3YTRmNWZlXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg" alt="Madame Web (2024)">
+                <h3>Madame Web (2024)</h3>
                 <div class="buttons">
-                    <a href="https://drive.google.com/file/d/1kGGC3_gTS7URSFJY-DYv5OCp15LSb1Gy/preview" class="watch-now-button">
+                    <a href="https://drive.google.com/file/d/1-RKgZjes_SW_GPWGOHNe0iAZsw0V9Om0/preview" class="watch-now-button">
                         <button class="watch-now">WATCH NOW</button>
                     </a>
-                    <a href="https://mega.nz/file/8z9CyJyI#ju8gVudoTCcsu7pSp5HGD0nMi6q6uHpPuihBVtkUqos" class="download-button">
+                    <a href="https://mega.nz/file/PItTzBoB#wEYu_Qp8sGQnzKhr4LJYI9Od7H-Okd14w3Hd1xNUObA" class="download-button">
                         <button class="download">DOWNLOAD</button>
                     </a>
                 </div>
@@ -90,18 +99,6 @@
                         <button class="watch-now">WATCH NOW</button>
                     </a>
                     <a href="https://mega.nz/file/RmEzTISI#XpbCAaQtodEBN6klZ4FmPqGBctxLJJS1iC20Fnh2wtM" class="download-button">
-                        <button class="download">DOWNLOAD</button>
-                    </a>
-                </div>
-            </div>
-            <div class="movie">
-                <img src="https://images-cdn.ubuy.co.in/635401d3e246c026804225de-venom-let-there-be-carnage-dvd.jpg" alt="Venom Let There Be Carnage 2021">
-                <h3>Venom Let There Be Carnage 2021</h3>
-                <div class="buttons">
-                    <a href="https://drive.google.com/file/d/16WSSLMdnmK6xjVtJHIh8MKumpS1dPccz/preview" class="watch-now-button">
-                        <button class="watch-now">WATCH NOW</button>
-                    </a>
-                    <a href="https://mega.nz/file/t6VUxKCS#2w6b9rC2bsYjH12g4snt817a7k-Eu4wfrQYq4AOz6OY" class="download-button">
                         <button class="download">DOWNLOAD</button>
                     </a>
                 </div>
@@ -310,6 +307,43 @@
                     </a>
                 </div>
             </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTFkZjdjN2QtOGE5MS00ZTgzLTgxZjAtYzkyZWQ5MjEzYmZjXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_FMjpg_UX1000_.jpg" alt="Venom">
+                <h3>Venom (2018)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1kGGC3_gTS7URSFJY-DYv5OCp15LSb1Gy/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/8z9CyJyI#ju8gVudoTCcsu7pSp5HGD0nMi6q6uHpPuihBVtkUqos" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://images-cdn.ubuy.co.in/635401d3e246c026804225de-venom-let-there-be-carnage-dvd.jpg" alt="Venom Let There Be Carnage 2021">
+                <h3>Venom Let There Be Carnage 2021</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/16WSSLMdnmK6xjVtJHIh8MKumpS1dPccz/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/t6VUxKCS#2w6b9rC2bsYjH12g4snt817a7k-Eu4wfrQYq4AOz6OY" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://image.tmdb.org/t/p/w342/8mRrl8lc7TrbdA1PFzUhQ0nFZ7R.jpg" alt="Venom: The Last Dance (2024)">
+                <h3>Venom: The Last Dance (2024)</h3>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/13No3FRYXiQ7qTScMm1G0_TXLSMAGpvLO/preview" class="watch-now-button">
+                        <button class="watch-now">WATCH NOW</button>
+                    </a>
+                    <a href="https://mega.nz/file/zvhxDDAA#jPWHqYHiRoQYOkoPFWc2Hmx5cBWfONIml5VU2-dTS6s" class="download-button">
+                        <button class="download">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+            
         </div>
     </section>
     <script>
@@ -319,6 +353,21 @@
  });
  
      </script>
+       <script>
+        function filterMovies() {
+            const searchInput = document.getElementById("search-bar").value.toLowerCase();
+            const movies = document.querySelectorAll(".movie");
+    
+            movies.forEach(movie => {
+                const title = movie.querySelector("h3").textContent.toLowerCase();
+                if (title.includes(searchInput)) {
+                    movie.style.display = "block";
+                } else {
+                    movie.style.display = "none";
+                }
+            });
+        }
+    </script>
     <footer>
         <p>&copy; 2024 Marvel World. All rights reserved.<br>
             * You're at the bottom. No post-credit scenes here, but nice try.<br>
@@ -327,4 +376,3 @@
     </footer>
 </body>
 </html>
-
