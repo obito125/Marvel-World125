@@ -37,6 +37,15 @@
         <h1>Welcome to Spidey World</h1>
         <nav>
             <ul>
+                <section id="movies">
+                    <h2>Marvel Movies</h2>
+                    <div class="search-container">
+                        <input type="text" id="search-bar" placeholder="Search for a movie..." onkeyup="filterMovies()">
+                    </div>
+                    <div class="movie-list">
+                        <!-- Existing movie cards -->
+                    </div>
+                </section>
                 <li><a href="#back" id="back-button" class="back-button">Back</a></li>
                 <li><a href="#movies">Movies</a></li>
                 <li><a href="#characters">Characters</a></li>
@@ -170,10 +179,10 @@
                 <img src="https://m.media-amazon.com/images/M/MV5BZjI5NmFmOWUtZWY0ZS00NTc5LWE0YjgtMjk3YmNiM2EwM2U4XkEyXkFqcGdeQXVyMTA1NjE5MTAz._V1_.jpg" alt="Spider-Man: No Way Home">
                 <h3>Spider-Man: No Way Home (2021)</h3>
                 <div class="buttons">
-                    <a href="watch-now.html" class="watch-now-button">
+                    <a href="https://drive.google.com/file/d/1wsQ2EYANtqX9KxTm-HCouYg0P8Iz0n3b/preview" class="watch-now-button">
                         <button class="watch-now">WATCH NOW</button>
                     </a>
-                    <a href="https://mega.nz/file/jcUXFLBL#pSGQ3lg1WowHlEQV-3dt1aRXkhAJyN63SGq2Obh-NdM" class="download-button">
+                    <a href="https://mega.nz/file/yiZD3JaR#JkXs5mrdltHAHOiA6W3UYwK8WDH5UCdquj-h2TAFwS4" class="download-button">
                         <button class="download">DOWNLOAD</button>
                     </a>
                 </div>
@@ -188,6 +197,21 @@
                     }, 500); // Match the CSS transition duration
                 }, 3000); // 4 seconds delay
             });
+            </script>
+              <script>
+                function filterMovies() {
+                    const searchInput = document.getElementById("search-bar").value.toLowerCase();
+                    const movies = document.querySelectorAll(".movie");
+            
+                    movies.forEach(movie => {
+                        const title = movie.querySelector("h3").textContent.toLowerCase();
+                        if (title.includes(searchInput)) {
+                            movie.style.display = "block";
+                        } else {
+                            movie.style.display = "none";
+                        }
+                    });
+                }
             </script>
             <footer>
                 <p>&copy; 2024 Marvel World. All rights reserved.<br>
