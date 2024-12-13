@@ -13,6 +13,15 @@
         <h1>Welcome to Avengers World</h1>
         <nav>
             <ul>
+                <section id="movies">
+                    <h2>Marvel Movies</h2>
+                    <div class="search-container">
+                        <input type="text" id="search-bar" placeholder="Search for a movie..." onkeyup="filterMovies()">
+                    </div>
+                    <div class="movie-list">
+                        <!-- Existing movie cards -->
+                    </div>
+                </section>
                 <li><a href="#back" id="back-button" class="back-button">Back</a></li>
                 <li><a href="#movies">Movies</a></li>
                 <li><a href="#characters">Characters</a></li>
@@ -118,3 +127,19 @@
                     </a>
                 </div>
             </div>
+                  <script>
+                function filterMovies() {
+                    const searchInput = document.getElementById("search-bar").value.toLowerCase();
+                    const movies = document.querySelectorAll(".movie");
+            
+                    movies.forEach(movie => {
+                        const title = movie.querySelector("h3").textContent.toLowerCase();
+                        if (title.includes(searchInput)) {
+                            movie.style.display = "block";
+                        } else {
+                            movie.style.display = "none";
+                        }
+                    });
+                }
+            </script>
+            
