@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel World</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .spinner {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin-bottom: 20px; /* Space between spinner and message */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#main-content {
+    display: none; /* Hidden initially */
+}
+
+    </style>
+</head>
+<body>
+     <!-- Loading Screen -->
+     <div id="loading-screen">
+        <div class="spinner"></div>
+        <p>HERE I PROVIDE ONLY *TELUGU* and *TAMIL* CONTENT ONLY BE AWARE IT.</p>
+    </div>
+    <header>
+        <h1>Welcome to UPCOMING MOVIES</h1>
+        <nav>
+            <ul>
+                <section id="movies">
+                    <h2>Marvel Movies</h2>
+                    <div class="search-container">
+                        <input type="text" id="search-bar" placeholder="Search for a movie..." onkeyup="filterMovies()">
+                    </div>
+                    <div class="movie-list">
+                        <!-- Existing movie cards -->
+                    </div>
+                </section>
+                <li><a href="#back" id="back-button" class="back-button">Back</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <div class="popcorn-container">
+                        <img src="https://i.pinimg.com/564x/93/ae/4a/93ae4ab13f9a7a01e5b73eba15f70eb9.jpg" alt="Popcorn" class="popcorn-logo">
+                        <div class="button">
+                            <a href="https://blinkit.com/cn/popcorn/cid/1237/156">
+                                <button class="popcorn-button">Enjoy with Popcorn!</button>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a id="back-button" href="loadmore.html">Back</a>
+        </nav>
+    </header>
+    
+    <section id="movies">
+        <h2>Spidey Movies</h2>
+        <div class="movie-list">
+            <div class="movie" onclick="playMovie(this, 'movie1.mp4')">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/90/Thunderbolts%2A_poster.jpg" alt="Thunderbolts(2025)">
+                <h3>Thunderbolts(2025)</h3>
+                <div class="buttons">
+                    <a href="#" class="watch-now-button">
+                        <button class="watch-now">NOT AVAILABLE</button>
+                    <a href="#" class="download-button">
+                        <button class="download">NOT AVAILABLE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDgzYmI2OTEtNTViNC00MWJhLWIxNjctZTc5NDY4ZDhlOGUxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Daredevil: Born Again (2025)">
+                <h3>Daredevil: Born Again (2025)</h3>
+                <div class="buttons">
+                    <a href="#" class="watch-now-button">
+                        <button class="watch-now">NOT AVAILABLE</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">NOT AVAILABLE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://i.annihil.us/u/prod/marvel/i/mg/6/50/5cd446c75071c/clean.jpg" alt="Ironheart(2025)">
+                <h3>Ironheart(2025)</h3>
+                <div class="buttons">
+                    <a href="#" class="watch-now-button">
+                        <button class="watch-now">NOT AVAILABLE</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">NOT AVAILABLE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/13/The_Fantastic_Four_First_Steps_poster.jpg/220px-The_Fantastic_Four_First_Steps_poster.jpg" alt="The Fantastic Four: First Steps(2025)">
+                <h3>The Fantastic Four: First Steps(2025)</h3>
+                <div class="buttons">
+                    <a href="#" class="watch-now-button">
+                        <button class="watch-now">NOT AVAILABLE</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">NOT AVAILABLE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BYTFjODcxMDQtMjZhMS00YmZkLThmMjItMDA1OGE4N2I0YzVkXkEyXkFqcGc@._V1_.jpg" alt="Eyes of Wakanda(2025)">
+                <h3>Eyes of Wakanda(2025)</h3>
+                <div class="buttons">
+                    <a href="#" class="watch-now-button">
+                        <button class="watch-now">NOT AVAILABLE</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">NOT AVAILABLE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/e0/5af9e91c45b47/portrait_uncanny.jpg" alt="Wonder Man(2025)">
+                <h3>Wonder Man(2025)</h3>
+                <div class="buttons">
+                    <a href="#" class="watch-now-button">
+                        <button class="watch-now">NOT AVAILABLE</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">NOT AVAILABLE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/I/81X3rPidxZL._AC_UF1000,1000_QL80_.jpg" alt="Marvel Zombies(2025)">
+                <h3>Marvel Zombies(2025)</h3>
+                <div class="buttons">
+                    <a href="#" class="watch-now-button">
+                        <button class="watch-now">NOT AVAILABLE</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">NOT AVAILABLE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BMGNiN2RlZTMtMTkyZC00YjkwLTgyY2QtMDg1ZDNhODQwNWM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Avengers doomsday (2026)">
+                <h3>Avengers doomsday (2026)</h3>
+                <div class="buttons">
+                    <a href="#" class="watch-now-button">
+                        <button class="watch-now">NOT AVAILABLE</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">NOT AVAILABLE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BZWE0MjkyNGQtMjgwMS00NGIwLTg5YmEtYThlOTQ1NTZmNWFmXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg" alt="Avengers Secret Wars (2027)">
+                <h3>Avengers Secret Wars (2027)</h3>
+                <div class="buttons">
+                    <a href="#" class="watch-now-button">
+                        <button class="watch-now">NOT AVAILABLE</button>
+                    </a>
+                    <a href="#" class="download-button">
+                        <button class="download">NOT AVAILABLE</button>
+                    </a>
+                </div>
+            </div>
+            <script>
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    document.getElementById('loading-screen').style.opacity = '0';
+                    setTimeout(function() {
+                        document.getElementById('loading-screen').style.display = 'none';
+                        document.getElementById('main-content').style.display = 'block';
+                    }, 500); // Match the CSS transition duration
+                }, 3000); // 4 seconds delay
+            });
+            </script>
+              <script>
+                function filterMovies() {
+                    const searchInput = document.getElementById("search-bar").value.toLowerCase();
+                    const movies = document.querySelectorAll(".movie");
+            
+                    movies.forEach(movie => {
+                        const title = movie.querySelector("h3").textContent.toLowerCase();
+                        if (title.includes(searchInput)) {
+                            movie.style.display = "block";
+                        } else {
+                            movie.style.display = "none";
+                        }
+                    });
+                }
+            </script>
+            <footer>
+                <p>&copy; 2024 Marvel World. All rights reserved.<br>
+                    * You're at the bottom. No post-credit scenes here, but nice try.<br>
+                    * Thanks for scrolling down... We hope it was worth the exercise for your thumb...
+        
+                </p>
+            </footer>
+        </body>
+        </html>
